@@ -16,7 +16,7 @@ Data query process: The id number, which is the key we receive from the user, is
 
 Data display process: All data belonging to animals in the text file are displayed in order of name, species, age and id.
 
-GUI was created in JavaFX language with CSS support.
+The user interface is made with JavaFX and CSS support.
 
 If you're wondering how it works, here's a link to the video I tested:
 
