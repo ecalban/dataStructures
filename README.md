@@ -1,4 +1,4 @@
-It is an Animal Shelter Management System project where we can perform operations such as adding, extracting, updating, displaying and searching on data.
+It is an Animal Shelter Management System project where we can perform operations such as adding, extracting, updating, searching and displaying on data.
 
 The data was kept in a text file without any database. Instead of a ready-made data structure, a Linked List data structure created from scratch was used.
 
