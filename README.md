@@ -18,4 +18,3 @@ Data display process: All data belonging to animals in the text file are display
 
 GUI was created in JavaFX language with CSS support.
 
-file:///C:/Users/w11/Videos/Ekran%20Kay%C4%B1tlar%C4%B1/ProjeG%C3%B6sterimi%20%E2%80%90%20Clipchamp%20ile%20yap%C4%B1ld%C4%B1.mp4
