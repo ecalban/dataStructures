@@ -13,12 +13,6 @@ Data query process: The id number, which is the key we receive from the user, is
 Data display process: All data belonging to animals in the text file are displayed in order of name, species, age and id.
 
 
-![Image](https://github.com/user-attachments/assets/52a2b3d6-f3bd-4ef9-9f1a-43b1a053132c)
-
-
-![Image](https://github.com/user-attachments/assets/c7b6ffd8-993e-478d-9ed0-2acb37ecce5c)
-
-
 ![Image](https://github.com/user-attachments/assets/7802f742-d96d-443d-8b6f-29f5221faec3)
 
 
