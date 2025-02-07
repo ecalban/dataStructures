@@ -10,4 +10,6 @@ Data update process: The data of the animal with the id number we received from 
 
 Data query process: The id number, which is the key we receive from the user, is queried in the Linked List data structure and if there is an animal with the id number in the data structure, this animal is displayed.
 
+Data display process: All data belonging to animals in the text file are displayed in order of name, species, age and id.
+
 GUI was created in JavaFX language with CSS support.
