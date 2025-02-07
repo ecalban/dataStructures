@@ -2,12 +2,11 @@ It is an Animal Shelter Management System project where we can perform operation
 
 The data was kept in a text file without any database. Instead of a ready-made data structure, a Linked List data structure created from scratch was used.
 
+Data insertion process: The data we receive from the user is first added to the Linked List data structure, then the data structure is read and added to the text file. During this time, the received data is subjected to the validation process.
+
 ![Image](https://github.com/user-attachments/assets/7802f742-d96d-443d-8b6f-29f5221faec3)
 
 ![Image](https://github.com/user-attachments/assets/d1dc43c8-1775-46f5-9700-839c889119dd)
-
-
-Data insertion process: The data we receive from the user is first added to the Linked List data structure, then the data structure is read and added to the text file. During this time, the received data is subjected to the validation process.
 
 Data extraction process: The animal with the id number received from the user is extracted from the data structure, then the new data structure is read again and added to the text file.
 
