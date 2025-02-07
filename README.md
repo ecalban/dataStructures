@@ -6,5 +6,6 @@ Data insertion process: The data we receive from the user is first added to the 
 
 Data extraction process: The animal with the id number received from the user is extracted from the data structure, then the new data structure is read again and added to the text file.
 
+Data update process: The data of the animal with the id number we received from the user is first updated in the Linked List data structure, then the data structure is read and added to the text file.
 
 GUI was created in JavaFX language with CSS support.
