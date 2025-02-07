@@ -26,7 +26,7 @@ public class Controller {
 	private Stage stage;
 	private Scene scene;
 
-	// PENCERELERDE SWITCH İŞLEMLERİ
+	// SWITCH OPERATIONS ON WINDOWS
 
 	@FXML
 	public void switchToSceneAdminLogin(ActionEvent event) throws IOException {
@@ -72,6 +72,7 @@ public class Controller {
 		stage.setScene(scene);
 		stage.show();
 	}
+
 	@FXML
 	public void switchToSceneUserDisplayTheAnimals(ActionEvent event) throws IOException {
 		Parent root = FXMLLoader.load(getClass().getResource("UserDisplayTheAnimals.fxml"));
@@ -135,19 +136,19 @@ public class Controller {
 		stage.show();
 	}
 
-	// YÖNETİCİ GİRİŞ İŞLEMLERİ
+	// ADMIN LOGIN OPERATIONS
 
 	@FXML
 	private TextField adminLoginUserNameTextField;
 	@FXML
-	private PasswordField adminLoginPasswordPaswordField;
+	private PasswordField adminLoginPasswordPasswordField;
 
 	@FXML
 	private Label adminLoginUserNameLabel;
 	@FXML
 	private Label adminLoginPasswordLabel;
 
-	private static String adminName = "eren";
+	private static String adminName = "ecalban";
 	private static String adminPassword = "eren12345";
 	private static String enteredAdminName;
 	private static String enteredAdminPassword;
@@ -165,17 +166,17 @@ public class Controller {
 		adminLoginUserNameLabel.setTooltip(usernameTooltip);
 		adminLoginPasswordLabel.setTooltip(passwordTooltip);
 
-		// kullanıcı adı kontrolü
+		// username control
 		try {
 			enteredAdminName = adminLoginUserNameTextField.getText().toString();
 			boolean adminNameControl = true;
 
-			// uzunluk kontrolü
+			// length control
 			if (enteredAdminName.length() < 3 || enteredAdminName.length() > 15) {
 				adminNameControl = false;
 			}
 
-			// karakter kontrolü
+			// character control
 			for (int i = 0; i < enteredAdminName.length(); i++) {
 				char character = enteredAdminName.charAt(i);
 				if (!Character.isLetterOrDigit(character)) {
@@ -198,17 +199,17 @@ public class Controller {
 			return;
 		}
 
-		// şifre kontrolü
+		// password control
 		try {
-			enteredAdminPassword = adminLoginPasswordPaswordField.getText().toString();
+			enteredAdminPassword = adminLoginPasswordPasswordField.getText().toString();
 			boolean adminPasswordControl = true;
 
-			// uzunluk kontrolü
+			// length control
 			if (enteredAdminPassword.length() < 8 || enteredAdminPassword.length() > 20) {
 				adminPasswordControl = false;
 			}
 
-			// karakter kontrolü
+			// character control
 			for (int i = 0; i < enteredAdminPassword.length(); i++) {
 				char character = enteredAdminPassword.charAt(i);
 				if (!Character.isLetterOrDigit(character)) {
@@ -236,7 +237,7 @@ public class Controller {
 
 	}
 
-	// KULLANICI GİRİŞ İŞLEMLERİ
+	// USER LOGIN OPERATIONS
 
 	@FXML
 	private TextField userLoginUserNameTextField;
@@ -248,7 +249,7 @@ public class Controller {
 	@FXML
 	private Label userLoginPasswordLabel;
 
-	private static String userName = "EREN";
+	private static String userName = "ECALBAN";
 	private static String userPassword = "EREN12345";
 	private static String enteredUserName;
 	private static String enteredUserPassword;
@@ -266,17 +267,17 @@ public class Controller {
 		userLoginUserNameLabel.setTooltip(usernameTooltip);
 		userLoginPasswordLabel.setTooltip(passwordTooltip);
 
-		// kullanıcı adı kontrolü
+		// username control
 		try {
 			enteredUserName = userLoginUserNameTextField.getText().toString();
 			boolean userNameControl = true;
 
-			// uzunluk kontrolü
+			// length control
 			if (enteredUserName.length() < 3 || enteredUserName.length() > 15) {
 				userNameControl = false;
 			}
 
-			// karakter kontrolü
+			// character control
 			for (int i = 0; i < enteredUserName.length(); i++) {
 				char character = enteredUserName.charAt(i);
 				if (!Character.isLetterOrDigit(character)) {
@@ -301,17 +302,17 @@ public class Controller {
 			return;
 		}
 
-		// şifre kontrolü
+		// password control
 		try {
 			enteredUserPassword = userLoginPasswordPasswordField.getText().toString();
 			boolean userPasswordControl = true;
 
-			// uzunluk kontrolü
+			// length control
 			if (enteredUserPassword.length() < 8 || enteredUserPassword.length() > 20) {
 				userPasswordControl = false;
 			}
 
-			// karakter kontrolü
+			// character control
 			for (int i = 0; i < enteredUserPassword.length(); i++) {
 				char character = enteredUserPassword.charAt(i);
 				if (!Character.isLetterOrDigit(character)) {
@@ -339,7 +340,7 @@ public class Controller {
 
 	}
 
-	// YÖNETİCİ HAYVAN EKLEME İŞLEMLERİ
+	// ADMIN ANIMAL ADDING OPERATIONS
 
 	@FXML
 	private TextField addAnimalIdTextField;
@@ -369,7 +370,7 @@ public class Controller {
 		idListFromText.clear();
 		FileManager.createIdListIFromText(FileManager.animal, idListFromText);
 
-		// ID kontrolü: Maksimum 3 haneli
+		// ID control
 		try {
 			animalAddId = Long.parseLong(addAnimalIdTextField.getText());
 			if (animalAddId >= 999 || animalAddId <= 1) {
@@ -396,7 +397,7 @@ public class Controller {
 			return;
 		}
 
-		// Tür kontrolü: Maksimum 15 haneli
+		// Kind control
 		animalAddKind = addAnimalKindTextField.getText();
 		if (animalAddKind.isEmpty()) {
 			addAnimalKindLabel.setText("Animal kind: " + "\n(Kind cannot be empty)");
@@ -437,7 +438,7 @@ public class Controller {
 			addAnimalKindLabel.setText("Animal kind: ");
 		}
 
-		// İsim kontrolü: Maksimum 20 haneli
+		// Name control
 		animalAddName = addAnimalNameTextField.getText();
 		if (animalAddName.isEmpty()) {
 			addAnimalNameLabel.setText("Animal name: " + "\n(Name cannot be empty)");
@@ -465,7 +466,7 @@ public class Controller {
 			return;
 		}
 
-		// Yaş kontrolü: Maksimum 200 olmalı
+		// Age control
 		try {
 			animalAddAge = Integer.parseInt(addAnimalAgeTextField.getText());
 			if (animalAddAge < 0) {
@@ -480,7 +481,7 @@ public class Controller {
 			return;
 		}
 
-		// Başarılı giriş
+		// Successful Login
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(FileManager.animal, true))) {
 			writer.write(animalAddName + " " + animalAddKind + " " + animalAddAge + " " + animalAddId);
 			writer.newLine();
@@ -505,7 +506,7 @@ public class Controller {
 		addAnimalAgeLabel.setText("Animal age: ");
 	}
 
-	// YÖNETİCİ HAYVAN ÇIKARMA İŞLEMLERİ
+	// ADMIN ANIMAL EXTRACTING OPERATIONS
 
 	@FXML
 	private TextField removeAnimalIdTextField;
@@ -548,7 +549,7 @@ public class Controller {
 		FileManager.sortedLLToText();
 	}
 
-	// YÖNETİCİ HAYVAN GÖRÜNTÜLEME İŞLEMLERİ
+	// ADMIN ANIMAL DISPLAY OPERATIONS
 
 	@FXML
 	private TextArea displayTextArea;
@@ -568,7 +569,7 @@ public class Controller {
 		}
 	}
 
-	// YÖNETİCİ HAYVAN SORGULAMA İŞLEMLERİ
+	// ADMIN ANIMAL QUERY OPERATIONS
 
 	@FXML
 	private TextArea displayTheSearchTextArea;
@@ -607,20 +608,14 @@ public class Controller {
 			return;
 		}
 
-		// başarılı giriş
+		// Successful Login
 		LinkedList.ll.resetTheLL();
 		FileManager.textToLL(FileManager.animal);
 		displayTheSearchTextArea.setText(LinkedList.ll.findInLLMakeItString(animalSearchId));
 	}
-	
-	// YÖNETİCİ HAYVAN GÜNCELLEME İŞLEMLERİ
-	
-	// YÖNETİCİ HAYVAN GÜNCELLEME İŞLEMLERİ
-
-	// YÖNETİCİ HAYVAN SORGULAMA İŞLEMLERİ
 
 
-	// HAYVAN GÜNCELLEME İŞLEMLERİ
+	// ADMIN ANIMAL UPDATING OPERATIONS
 
 	@FXML
 	private TextField updateAnimalIdTextField;
@@ -712,7 +707,7 @@ public class Controller {
 		animalIdForUpdate = Long.parseLong(animalIdToUpdateTextField.getText());
 		animalKindForUpdate = animalKindToUpdateTextField.getText();
 
-		// İsim kontrolü: Maksimum 20 haneli
+		// Name control
 		animalNameForUpdate = animalNameToUpdateTextField.getText();
 		if (animalNameForUpdate.isEmpty()) {
 			animalNameToUpdateLabel.setText("Animal name: " + "\n(Name cannot be empty)");
@@ -752,7 +747,7 @@ public class Controller {
 			animalNameToUpdateLabel.setText("Animal name: ");
 		}
 
-		// Yaş kontrolü: Maksimum 200 olmalı
+		// Age control
 		try {
 			animalAgeForUpdate = Integer.parseInt(animalAgeToUpdateTextField.getText());
 			if (animalAgeForUpdate < 0) {
@@ -766,7 +761,7 @@ public class Controller {
 			animalAgeToUpdateLabel.setText("Animal age: " + "\n(Enter a valid age)");
 			return;
 		}
-		// başarılı giriş
+		// Successful Login
 		LinkedList.ll.resetTheLL();
 		FileManager.textToLL(FileManager.animal);
 		LinkedList.ll.removeFromLL(animalIdForUpdate);
