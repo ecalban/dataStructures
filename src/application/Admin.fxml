@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Admin.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="233.0" layoutY="76.0" prefHeight="36.0" prefWidth="134.0" text="Admin Screen">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="82.0" layoutY="195.0" mnemonicParsing="false" onAction="#switchToSceneAdminAnimalAdd" prefHeight="52.0" prefWidth="126.0" text="Add Animal" />
+      <Button layoutX="237.0" layoutY="195.0" mnemonicParsing="false" onAction="#switchToSceneAdminAnimalRemove" prefHeight="52.0" prefWidth="126.0" text="Remove Animal" />
+      <Button layoutX="392.0" layoutY="195.0" mnemonicParsing="false" onAction="#switchToSceneAdminAnimalUpdate" prefHeight="52.0" prefWidth="126.0" text="Update Animal" />
+      <Button layoutX="237.0" layoutY="273.0" mnemonicParsing="false" onAction="#switchToSceneAdminAnimalSearch" prefHeight="52.0" prefWidth="126.0" text="Search Animal" />
+      <Button layoutX="391.0" layoutY="273.0" mnemonicParsing="false" onAction="#switchToSceneMain" prefHeight="52.0" prefWidth="126.0" text="Back" />
+      <Button layoutX="82.0" layoutY="273.0" mnemonicParsing="false" onAction="#switchToSceneAdminDisplayTheAnimals" prefHeight="52.0" prefWidth="126.0" text="Display Animals" />
+   </children>
+</AnchorPane>

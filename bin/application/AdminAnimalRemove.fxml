@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@AdminAnimalRemove.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="134.0" layoutY="82.0" prefHeight="36.0" prefWidth="342.0" text="Administrator Animal Removal Operations">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="345.0" layoutY="274.0" mnemonicParsing="false" onAction="#switchToSceneAdmin" prefHeight="36.0" prefWidth="82.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="263.0" layoutY="228.0" mnemonicParsing="false" onAction="#AdminAnimalRemovingRemove" prefHeight="36.0" prefWidth="82.0" text="Remove">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="removeAnimalIdLabel" layoutX="136.0" layoutY="159.0" text="Animal id: ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="removeAnimalIdTextField" layoutX="305.0" layoutY="159.0" />
+      <Button layoutX="179.0" layoutY="274.0" mnemonicParsing="false" onAction="#AdminAnimalRemovingSave" prefHeight="36.0" prefWidth="82.0" text="Save">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
