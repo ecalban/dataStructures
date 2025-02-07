@@ -18,4 +18,3 @@ Data display process: All data belonging to animals in the text file are display
 
 GUI was created in JavaFX language with CSS support.
 
-https://github.com/user-attachments/assets/bb5d79da-83e6-45c8-b009-7d78b26549a1
