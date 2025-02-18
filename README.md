@@ -25,5 +25,6 @@ https://youtu.be/XlqK1VFVhPw
 If you want to run this project, make sure you have done the necessary installations (JavaFX, Java). If your installation is ready, when you run the project you will see two options. One of them is administrator login, the other is user login. Here is the login information you need to know:
 
 username: eren, password: eren12345 (for the administrator)
+
 username: EREN, password: EREN12345 (for the user)
 
