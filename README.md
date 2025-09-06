@@ -1,5 +1,3 @@
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 It is an Animal Shelter Management System project where we can perform operations such as adding, extracting, updating, query and displaying on data.
 
 The data was kept in a text file without any database. Instead of a ready-made data structure, a Linked List data structure created from scratch was used.
@@ -30,3 +28,4 @@ username: ecalban, password: eren12345 (for the administrator)
 
 username: ECALBAN, password: EREN12345 (for the user)
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
