@@ -28,4 +28,6 @@ username: ecalban, password: eren12345 (for the administrator)
 
 username: ECALBAN, password: EREN12345 (for the user)
 
+
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
